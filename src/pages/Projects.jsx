@@ -15,9 +15,9 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've worked on numerous projects throughout these years, but these are
-        the ones I hold closest to my heart. 
-        Your collaboration is highly valued!
+        A few things I've built end to end — from an AI-driven e-commerce platform
+        to a computer-vision e-challan system and the fest website that served
+        3000+ users. Your collaboration is highly valued!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
@@ -28,7 +28,7 @@ const Projects = () => {
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
                   src={project.iconUrl}
-                  alt='threads'
+                  alt={project.name}
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
@@ -39,21 +39,23 @@ const Projects = () => {
                 {project.name}
               </h4>
               <p className='mt-2 text-slate-500'>{project.description}</p>
-              <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <Link
-                  to={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
-                >
-                  Live Link
-                </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
-              </div>
+              {project.link && (
+                <div className='mt-5 flex items-center gap-2 font-poppins'>
+                  <Link
+                    to={project.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='font-semibold text-blue-600'
+                  >
+                    Live Link
+                  </Link>
+                  <img
+                    src={arrow}
+                    alt='arrow'
+                    className='w-4 h-4 object-contain'
+                  />
+                </div>
+              )}
             </div>
           </div>
         ))}

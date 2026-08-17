@@ -78,6 +78,23 @@ const Contact = () => {
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
 
+        <div className='mt-5 flex flex-col gap-1 text-slate-500'>
+          <a href='mailto:shishird003@gmail.com' className='hover:text-blue-600'>
+            shishird003@gmail.com
+          </a>
+          <a href='tel:+917349054329' className='hover:text-blue-600'>
+            +91 7349054329
+          </a>
+          <a
+            href='https://github.com/shishird-03'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-blue-600'
+          >
+            github.com/shishird-03
+          </a>
+        </div>
+
         <form
           ref={formRef}
           onSubmit={handleSubmit}

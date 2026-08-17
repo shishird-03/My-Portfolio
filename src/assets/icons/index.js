@@ -26,6 +26,17 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import python from './python.svg'
+import cplusplus from './cplusplus.svg'
+import fastapi from './fastapi.svg'
+import postgresql from './postgresql.svg'
+import mysql from './mysql.svg'
+import redis from './redis.svg'
+import prisma from './prisma.svg'
+import docker from './docker.svg'
+import pytest from './pytest.svg'
+import postman from './postman.svg'
+import bash from './bash.svg'
 
 export {
     css,
@@ -55,5 +66,16 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    python,
+    cplusplus,
+    fastapi,
+    postgresql,
+    mysql,
+    redis,
+    prisma,
+    docker,
+    pytest,
+    postman,
+    bash
 }

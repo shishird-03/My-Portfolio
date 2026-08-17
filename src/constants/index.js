@@ -1,27 +1,30 @@
-import { meta, shopify, starbucks, tesla, teralogo, logo } from "../assets/images";
+import { teralogo, logo } from "../assets/images";
 
 import {
-    car,
+    bash,
     contact,
-    css,
+    cplusplus,
+    docker,
     estate,
     express,
+    fastapi,
     git,
     github,
-    html,
     javascript,
     linkedin,
     mongodb,
-    motion,
-    mui,
+    mysql,
     nextjs,
     nodejs,
+    postgresql,
+    postman,
     pricewise,
+    prisma,
+    python,
+    pytest,
     react,
-    redux,
-    sass,
+    redis,
     snapgram,
-    summiz,
     tailwindcss,
     threads,
     typescript
@@ -29,58 +32,43 @@ import {
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: python,
+        name: "Python",
+        type: "Language",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
+        imageUrl: cplusplus,
+        name: "C++",
+        type: "Language",
     },
     {
         imageUrl: javascript,
         name: "JavaScript",
-        type: "Frontend",
+        type: "Language",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Language",
     },
-    // {
-    //     imageUrl: motion,
-    //     name: "Motion",
-    //     type: "Animation",
-    // },
-    // {
-    //     imageUrl: mui,
-    //     name: "Material-UI",
-    //     type: "Frontend",
-    // },
     {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
+        imageUrl: bash,
+        name: "Bash",
+        type: "Language",
+    },
+    {
+        imageUrl: fastapi,
+        name: "FastAPI",
+        type: "Backend",
     },
     {
         imageUrl: nodejs,
         name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
         type: "Backend",
     },
     {
@@ -89,13 +77,8 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
+        imageUrl: nextjs,
+        name: "Next.js",
         type: "Frontend",
     },
     {
@@ -104,9 +87,49 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
+    },
+    {
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Database",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
+        imageUrl: redis,
+        name: "Redis",
+        type: "Database",
+    },
+    {
+        imageUrl: prisma,
+        name: "Prisma ORM",
+        type: "Database",
+    },
+    {
+        imageUrl: docker,
+        name: "Docker",
+        type: "Testing & DevOps",
+    },
+    {
+        imageUrl: pytest,
+        name: "pytest",
+        type: "Testing & DevOps",
+    },
+    {
+        imageUrl: postman,
+        name: "Postman",
+        type: "Testing & DevOps",
+    },
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
     }
 ];
 
@@ -118,23 +141,24 @@ export const experiences = [
         iconBg: "#E6F4F1",
         date: "May 2025 - July 2025",
         points: [
-            "Supported and maintained internal IT infrastructure and Smart city implementation processs",
-            "Participated in code reviews and providing constructive feedback to other developers.",
+            "Supported configuration, deployment and maintenance of network hardware and ICT infrastructure for the PAN Smart City Project.",
+            "Acted as first-line support for hardware, software and connectivity issues — diagnosed root causes and restored service, improving device uptime.",
+            "Maintained operational records and compiled progress reports for stakeholders to support project coordination and delivery.",
         ],
     },
     {
-        title: " Summer Intern ",
+        title: "Summer Intern",
         company_name: "India Space Lab",
         icon: logo,
         iconBg: "#383E56",
         date: "June 2025 - July 2025",
         points: [
-            "Developed a model or a protope on CANSAT and CUBESAT as part of the internship program.",
-            "Implemented responsive design on Electronic Circuits and PCB Design modules using Easy EDA software.",
-            "Participated in hands on session with satellite communication systems and ground station operations including Rocketry design and fundamentals on image processing.", 
+            "Built a working CanSat and CubeSat prototype as part of the internship programme.",
+            "Designed electronic circuits and PCB layouts for the payload using EasyEDA.",
+            "Took part in hands-on sessions on satellite communication systems, ground station operations, rocketry design and image processing fundamentals.",
         ],
     },
-    
+
 ];
 
 export const socialLinks = [
@@ -159,43 +183,28 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'ACE Website- Assocaition of Computer Engineers',
-        description: "Contributing to the development of ACE’s official platform using the T3 Stack Next js, TypeScript, tRPC, Prisma. Designed and implemented responsive Blog and Team pages focused on clean UI and optimized user experience. Practicing version control with Git/GitHub to maintain efficient collaboration within the development team.",
-        link: 'https://github.com/shishird-03/ace',
+        name: 'Rajamrutha — AI-Driven E-Commerce Platform',
+        description: 'Full-stack e-commerce platform (storefront, admin panel and backend services) built on PostgreSQL with Prisma ORM, with REST API documentation and system design specs maintained across the lifecycle. Integrated a Retrieval-Augmented Generation (RAG) chatbot via the OpenRouter API to interpret user health queries and surface real-time, context-aware product recommendations. Secured with JWT authentication and Redis caching to hold response times steady under high traffic.',
+        link: 'https://ayurvedic-client.vercel.app',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'InterviewOne.ai',
-        description: 'Developing full-stack Next.js 16 application with TypeScript, integrating Google Gemini AI for real-time interview feedback analysis. Building voice-enabled interview system using VAPI SDK with Firebase Authentication and Firestore database integration. Integrating Firebase Admin SDK for secure user session management and real-time data synchronization across devices.',
-        link: '###',
-    },
-    {
-        //iconUrl: car,
-        theme: 'btn-back-blue',
-        name: '3D Personal Portfolio Website',
-        description: 'Designing and developing an interactive 3D personal portfolio website to showcase projects and skills through immersiveWebGL experiences Implementing dynamic 3D scenes and animations using Three.js and React Three Fiber with smooth transitions via Framer Motion Enhancing UI responsiveness and performance with Tailwind CSS and optimized React component structure.',
-        link: '###',
+        name: 'SmartChallan — AI E-Challan System',
+        description: 'Computer-vision pipeline built on the YOLOv8 object-detection model to automate traffic-violation detection and digital fine collection, cutting manual processing. The detection service runs in Python (FastAPI) within a microservices architecture, exposing REST endpoints and containerised with Docker for CI/CD-ready deploys. JWT-based Role-Based Access Control isolates Citizen, Police and Admin workflows, backed by pytest suites across services.',
+        link: 'https://smart-challan.vercel.app',
     },
     {
         iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Agrigo- Waste Mangaement Platform',
-        description: ' Selected among Top 60 teams at Hackfest 2025 (in collaboration with Palo Alto Networks, Rakuten, Inflow Technologies and Niveous Solutions) for building an innovative agri-tech solution. Developed a scalable platform enabling farmers to sell agricultural waste directly to biofuel industries, creating a sustainable business model connecting farmers and industrial buyers. Applied full-stack development skills (React, Node.js, Express.js, MongoDB) to design, implement, and integrate critical system components.',
-        link: 'https://github.com/shishird-03/Hackfest25-38',
+        theme: 'btn-back-blue',
+        name: 'Incridea 2026 — "Dimensional Drift" Fest Website',
+        description: 'Official website for NMAMIT\'s annual fest, serving 3000+ users. Led a sub-team of 3–4 developers to build and deploy it, handling live bug fixes and holding zero downtime through peak registrations. Coordinated task distribution, tracked progress and cleared blockers under tight deadlines through cross-team collaboration.',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Lost and Found DBMS',
-        description: 'Designed and developed a full-stack web application for managing lost and found items using React.js, Node.js,Express.js, and MySQL.Implemented user authentication and authorization to enable secure login and account creation.Built modules for lost/found item reporting, item tracking, and automated item matching to improve recovery efficiency',
+        description: 'Full-stack web application for managing lost and found items, built with React.js, Node.js, Express.js and MySQL. Implemented user authentication and authorisation for secure login and account creation, plus modules for lost/found item reporting, item tracking and automated item matching to improve recovery rates.',
         link: 'https://github.com/shishird-03/Lost-and-Found-DBMS-Project',
     },
-   /* {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }*/
 ];
